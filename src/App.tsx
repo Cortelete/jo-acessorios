@@ -94,7 +94,7 @@ export default function App() {
 
       <main className="w-full max-w-[420px] max-h-[96vh] glass-card rounded-2xl p-4 sm:p-6 flex flex-col items-center relative overflow-y-auto no-scrollbar shadow-2xl border border-white/10 z-10 custom-scrollbar">
         {/* Transparent Card Background Image */}
-        <div className="absolute inset-0 bg-[url('/fundo.png')] bg-cover bg-center opacity-[0.05] pointer-events-none mix-blend-overlay z-0" />
+        <div className="absolute inset-0 bg-[url('/fundo.png')] bg-cover bg-center opacity-[0.12] pointer-events-none mix-blend-overlay z-0" />
         
         {/* Profile Section */}
         <motion.div 
