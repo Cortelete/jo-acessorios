@@ -216,40 +216,35 @@ export default function App() {
       </Modal>
 
       <Modal isOpen={isAboutOpen} onClose={() => setIsAboutOpen(false)}>
-        {/* Visual Header */}
-        <div className="relative h-28 sm:h-36 rounded-xl overflow-hidden mb-6 border border-white/10 flex items-center justify-center -mt-2">
-           <div className="absolute inset-0 bg-gradient-to-r from-[#020617] via-[#0f172a] to-[#020617] opacity-80" />
-           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(193,154,91,0.1)_0%,transparent_70%)]" />
-           <img src="/logo.png" className="w-16 h-16 sm:w-20 sm:h-20 relative z-10 border border-[#C19A5B]/20 rounded-full shadow-[0_0_20px_rgba(193,154,91,0.15)]" alt="Logo" />
-        </div>
+        <div className="flex flex-col items-center text-center px-1 sm:px-4 py-2">
+          {/* Subtle Logo Display */}
+          <div className="w-16 h-16 sm:w-20 sm:h-20 mb-8 relative">
+             <div className="absolute inset-0 border border-[#C19A5B]/30 rounded-full animate-[spin_10s_linear_infinite]" />
+             <div className="absolute inset-2 border border-[#C19A5B]/20 rounded-full animate-[spin_15s_linear_infinite_reverse]" />
+             <img src="/logo.png" className="w-full h-full object-cover rounded-full p-0.5 relative z-10 opacity-90" alt="Logo" />
+          </div>
 
-        <div className="space-y-6 font-sans text-xs sm:text-sm leading-relaxed text-white/80 px-1">
-           <div className="flex gap-4 items-start">
-              <div className="w-10 h-10 rounded-full bg-[#C19A5B]/5 flex items-center justify-center shrink-0 border border-[#C19A5B]/20">
-                 <Sparkles className="text-[#C19A5B] w-5 h-5" />
-              </div>
-              <p className="pt-0.5">
-                 Desde a sua criação, a <span className="font-sans font-medium text-[#E6C88A]">Jô Acessórios</span> vem construindo sua presença com <strong className="text-white font-medium">estilo e autenticidade</strong>.
-              </p>
-           </div>
+          <h3 className="text-lg sm:text-xl font-light text-white tracking-[0.2em] uppercase mb-8">
+            Nossa <span className="text-[#C19A5B]">Essência</span>
+          </h3>
 
-           <div className="flex gap-4 items-start">
-              <div className="w-10 h-10 rounded-full bg-[#C19A5B]/5 flex items-center justify-center shrink-0 border border-[#C19A5B]/20">
-                 <Diamond className="text-[#C19A5B] w-5 h-5" />
-              </div>
-              <p className="pt-0.5">
-                 Com uma curadoria cuidadosa, conquistamos clientes que valorizam <strong className="text-white font-medium">design moderno, versatilidade e identidade</strong>.
-              </p>
-           </div>
+          <div className="w-8 h-[1px] bg-[#C19A5B]/40 mb-8" />
 
-           <div className="flex gap-4 items-start">
-              <div className="w-10 h-10 rounded-full bg-[#C19A5B]/5 flex items-center justify-center shrink-0 border border-[#C19A5B]/20">
-                 <MapPin className="text-[#C19A5B] w-5 h-5" />
-              </div>
-              <p className="pt-0.5">
-                 Localizada em Ponta Grossa, seguimos conectando você com acessórios que expressam <strong className="text-white font-medium text-[13px] sm:text-base border-b border-[#C19A5B]/30 pb-0.5">quem você é</strong>.
-              </p>
-           </div>
+          <div className="space-y-8 font-light text-[11px] sm:text-[13px] leading-loose text-white/60 tracking-wider">
+            <p>
+               Desde a nossa criação, a <span className="text-white">Jô Acessórios</span> vem construindo sua presença com <strong className="font-normal text-[#C19A5B]">estilo e autenticidade</strong>.
+            </p>
+
+            <p>
+               Através de uma curadoria minuciosa, conectamos você à peças que valorizam o <strong className="font-normal text-white">design contemporâneo</strong>, a <strong className="font-normal text-white">versatilidade</strong> e a sua <strong className="font-normal text-[#C19A5B]">identidade única</strong>.
+            </p>
+
+            <div className="w-4 h-[1px] bg-[#C19A5B]/20 mx-auto" />
+
+            <p className="text-[9px] sm:text-[10px] uppercase tracking-[0.3em] text-white/40">
+              Ponta Grossa, PR
+            </p>
+          </div>
         </div>
       </Modal>
 
