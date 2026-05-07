@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { MapPin, Instagram, Info, MessageCircle, Star, Send, Clock, Sparkles, Diamond } from 'lucide-react';
+import { MapPin, Instagram, Info, MessageCircle, Star, Send, Clock, Sparkles, Diamond, Crown } from 'lucide-react';
 import { Modal } from './components/Modal';
 
 export default function App() {
@@ -56,9 +56,15 @@ export default function App() {
   const links = [
     {
       title: 'Contato',
-      subtitle: '55 42 99944-2531',
+      subtitle: 'Fale com a Jô',
       icon: <MessageCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4" strokeWidth={1} />,
       onClick: () => setIsContactOpen(true),
+    },
+    {
+      title: 'Entrar no Grupo VIP',
+      subtitle: 'Ofertas exclusivas',
+      icon: <Crown className="w-3.5 h-3.5 sm:w-4 sm:h-4" strokeWidth={1} />,
+      href: 'https://chat.whatsapp.com/BXNMs5IctpLJWKZIm8ec7W',
     },
     {
       title: 'Horário de Atendimento',
